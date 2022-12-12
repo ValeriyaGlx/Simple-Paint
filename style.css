@@ -1,0 +1,159 @@
+
+html, body {
+    width:  100%;
+    height: 100%;
+    margin: 0;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  *{
+      box-sizing: border-box;
+      margin: 0;
+     
+  }
+  
+  .AppBar{
+      background-color: #51718C;
+      min-height: 20vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 3% 20% 5%;
+  }
+  
+  .flex--box{
+   display: flex;
+  }
+
+  
+  #canvas{
+  background-color: #fafafa;
+  filter: drop-shadow(1px 1px 10px #222);
+  border-radius: 5px;
+  }
+  
+  .tool--box{
+      padding-top: 2%;
+  }
+
+  button{
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      border: 3px solid rgba(0, 0, 0, .15);
+      
+  }
+
+  button:hover{
+    filter: drop-shadow(3px 5px 2px #222);
+    border: 3px solid rgba(0, 0, 0, .3);
+  }
+
+  .active{
+    filter: drop-shadow(3px 5px 2px #222);
+    border: 3px solid rgba(0, 0, 0, .3);
+  }
+  
+
+
+  #black{background-color: black;}
+  #white{background-color: white;}
+  #red{background-color: red;}
+  #green{background-color: green;}
+  #brown{background-color: #8B4513;}
+  #grey{background-color: grey;}
+  #blue{background-color: blue;}
+  #yellow{background-color: yellow;}
+  #orange  {background-color: orange;}
+  #light--blue{background-color: lightblue;}
+  
+
+  .color{
+   margin-right: 30px;
+   width: 3em;
+   height: 3em;
+  }
+
+  .column{
+    margin-top: 8px;
+    padding: 8px;
+  }
+
+  .tool--box__settings{
+    border-radius: 5%;
+    border: 2px solid rgba(0, 0, 0, .1);
+  }
+
+  .tool--box__settings:first-child {
+    background: url(./icon/save.png) center no-repeat;
+    background-color:white;
+    background-size: 70% ;
+    margin-right: 10px;
+    
+}
+
+  .tool--box__settings:nth-child(2){
+    background: url(./icon/eraser.png) center no-repeat;
+    background-color:white;
+    background-size: 70%;
+    margin-right: 10px;
+}
+
+.tool--box__settings:nth-child(3){
+  background: url(./icon/busket.png) center no-repeat;
+  background-color:white;
+  background-size: 70%;
+  margin-right: 10px;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+}
+
+.lines :nth-child(2){
+  width: 50px;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+}
+
+.thick {
+  background: url(./icon/width.png) center no-repeat;
+  background-color:white;
+  background-size: 70%;
+}
+
+.color--circle{
+  display: flex;
+  flex-direction: column;
+}
+
+.color--img{
+  background: url(./icon/color.png) center no-repeat;
+  box-shadow: none;
+  background-size: 70%;}
+
+#colorful{
+  background: url(./icon/chromatic.png) center no-repeat;
+}
+
+.column{
+  display: flex;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .AppBar{
+  padding: 3% 7% 5%;
+  background-color: #e5e5e5
+}
+}

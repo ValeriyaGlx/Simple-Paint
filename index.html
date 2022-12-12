@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Paint</title>
+</head>
+<body>
+
+    <div class="AppBar">
+
+<div class="tool--box flex--box">
+    <button class='tool--box__settings key' id="save" title="save"></button>
+    <button class='tool--box__settings key' id="erase" title="erase"></button>
+    <button class='tool--box__settings key' id="pour" title="pour"></button>
+<div class="lines" title="wide">
+    <img class="thick" ></img>
+    <select id="linesWidth">
+        <option value="1">1</option>
+        <option value="3">2</option>
+        <option value="5">3</option>
+        <option value="7">4</option>
+        <option value="9">5</option>
+        <option value="11">6</option>
+        <option value="15">7</option>
+        <option value="18">8</option>
+        <option value="21">9</option>
+        <option value="25">10</option>
+    </select>
+</div>
+
+</div>
+
+<div class="tool--box">
+<div class="colors" id="colors">
+
+    <div class="column">
+    <button class="color" id="black" title="black"></button>
+    <button class="color" id="white" title="white"></button>
+    <button class="color" id="red" title="red"></button>
+    <button class="color" id="green" title="green"></button>
+    <button class="color" id="brown" title="brown"></button>
+    </div>
+
+    <div class="column">
+    <button class="color" id="grey" title="grey"></button>
+    <button class="color" id="blue" title="blue"></button>
+    <button class="color" id="yellow" title="yellow"></button>
+    <button class="color" id="orange" title="orange"></button>
+    <button class="color" id="light--blue" title="light blue"></button>
+    </div>
+</div>
+</div>
+
+<div class="tool--box flex--box">
+<button class="color" id="colorful" title="coloful paint"></button>
+
+<div class="color--circle" title="choose color">
+<img class="color--img" for="base"></img>
+<input id="color--input"  type="color" name="base" value="#ffc600">
+<div>
+</div>
+</div>
+</div>
+    </div>
+    <div class="container">
+    <canvas id="canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
